@@ -1,0 +1,12 @@
+@media(max-width:375px ){
+    .header_nav{
+        display: none;
+    }
+    .header_logo{
+        width: 100%;
+        text-align: center;
+    }
+    .header_logo p{
+        margin: 0;
+    }
+}
