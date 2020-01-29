@@ -5,14 +5,6 @@ body{
     background: #FCFCFC;
     margin: 0;
 }
-/*.containerの部分があるとうまくいかない*/
-/*.container{
-/*max-width: 1280pxないと余白はないがスクロールの部分と重なる
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-}*/
-
 /*headerはじまり-------------------------------------*/
 .header_wrap{
     height: 60px;
@@ -20,32 +12,60 @@ body{
     display: flex;
     /*display: inline-flexだとこのdiv自体もinline化する*/
 }
-.header_logo{
-    width: 50%;
-}
-.header_nav{
-    width: 50%;
-}
+
 .header_logo p{
+/*text-align: center;
+font: SemiBold 16px/16px Gill Sans;
+letter-spacing: 0;
+color: #918F89;
+opacity: 1;*/
     display: inline-block;
     text-align: center;
+    font-size: 16px;/*ここきいてない効いてない19pxになってる*/
+    font-family: 'SemiBold';/*ここ合ってるかわからん*/
+    font-family: 'Gill Sans';
     color: #918F89;
-    font-weight: bold;
     margin: 15px 0 0 88px;
-    line-height: 16px;
+    height: 35px;
+}
+.header_nav{
+    margin-top: 25px;
+    margin-right: 90px;
+    margin-left: auto;
+    width: 335px;
+    height: 35px;
+
 }
 .header_nav_list{
+    padding: 0;
+    margin: 0;
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 .header_nav_list_item{
-    margin-right: 90px;
+    line-height: 22px;
+
 }
 .header_nav_list_item a{
+    /*text-align: left;
+font: ExtraLight 16px/22px Noto Sans;
+letter-spacing: 0;
+color: #272727;
+opacity: 1;*/
+    font-family: 'Noto Sans';
+    font-weight: extraLight;
     text-decoration: none;
     color: #272727;
     opacity: 0.5;
+}
+.header_nav_list_item a :link{
+    box-shadow: 0 3px white;
+}
+.header_nav_list_item a :visited{
+    position: relative;
+    top: 3px;
+    box-shadow: none;
 }
 /*linkとvisited　うまく作用してない
 a:link{
