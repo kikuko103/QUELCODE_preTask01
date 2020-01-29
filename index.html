@@ -11,107 +11,95 @@
 <body>
 <!-----------------------headerのはじまり----------------------------->
 
-<!--CSSで、positionじゃなくてflexbox(display:flex)使ってるバージョンのhtmlのはじまり-->
-
-    <header>
-            <div class="header_wrap">
-                <div class="header_logo">
-                    <p>HTML<br>CSS</p>
-                </div>
-
-                <div class="header_nav">
-                    <nav class="header_nav_right" aria-label="サイトメニュー">
-                        <ul class="header_nav_list">
-                            <li class="header_nav_list_item"><a href="index.html">About</a></li>
-                            <li class="header_nav_list_item"><a href="news.html">News</a></li>
-                            <li class="header_nav_list_item"><a href="qa.html">Q&A</a></li>
-                        </ul>
-                    </nav>
-                </div>
-<!--ここにheader_mobileNaviでもいれよう（logoもnavも一から書く。ノート参照）-->
+<!--CSSで、positionじゃなくてflexbox(display:flex)使ってるバージョンで作成-->
+<header>
+    <div class="header_wrap">
+        <div class="header_logo">
+            <p>HTML<br>CSS</p>
         </div>
-    </header>
-<!--CSSで、positionじゃなくてflexbox使ってるバージョンのhtmlのおわり-->
-
+        <div class="header_nav">
+            <nav class="header_nav_right" aria-label="サイトメニュー">
+                <ul class="header_nav_list">
+                    <li class="header_nav_list_item"><a href="index.html">About</a></li>
+                    <li class="header_nav_list_item"><a href="news.html">News</a></li>
+                    <li class="header_nav_list_item"><a href="qa.html">Q&A</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
 <!-----------------------headerのおわり----------------------------->
-
 <div class="article01">
-        <div class="article01_wrap">
-            <img class="img01" src="img/img01.png" alt="">
-            <p class="article01_text">We&nbsp;propose&nbsp;a&nbsp;life.</p>
-        </div>
+    <div class="article01_wrap">
+        <img class="img01" src="img/img01.png" alt="">
+        <h1 class="article01_text">We&nbsp;propose&nbsp;a&nbsp;life.</h1>
+    </div>
 </div>     
-
 <div class="article02">
-        <div class="article02_wrap">
-            <div class="article02_imgBox">
-                <img class="img02" src="img/img02.png" alt="">
+    <div class="article02_wrap">
+        <div class="article02_imgBox">
+            <img class="img02" src="img/img02.png" alt="">
+        </div>
+        <div class="article02_textBox">
+            <div class="article02_textBox_h1Wrap">
+                <h1>暮らしを提案する。</h1>
             </div>
-            <div class="article02_textBox">
-                <div class="article02_textBox_h1Wrap">
-                    <h1>暮らしを提案する。</h1>
-                </div>
-                <div class="article02_textBox_pWrap">
-                    <p>私たちは、家具を売るのではなく、お客様の理想とする</p>
-                    <p>「暮らし」を提案します。</p>
-                    <p>仕事で疲れた後に帰りたくなる、</p>
-                    <p>今日も１日頑張ろうと思える、</p>
-                    <p>そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。</p>
-                </div>
+            <div class="article02_textBox_pWrap">
+                <p>私たちは、家具を売るのではなく、お客様の理想とする</p>
+                <p>「暮らし」を提案します。</p>
+                <p>仕事で疲れた後に帰りたくなる、</p>
+                <p>今日も１日頑張ろうと思える、</p>
+                <p>そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。</p>
             </div>
         </div>
+    </div>
 </div>
-
 <div class="article03">
-        <p class="article03_title">豊富なスタイル</p>
-        <img src="img/img03.png" alt="">
-        <div class="article03_dotBox">
-            <span class="dot"></span>
-            <span class="dot_center"></span>
-            <span class="dot"></span>
-        </div>
+    <p class="article03_title">豊富なスタイル</p>
+    <img src="img/img03.png" alt="">
+    <div class="article03_dotBox">
+        <span class="dot"></span>
+        <span class="dot_center"></span>
+        <span class="dot"></span>
+    </div>
 </div>
-
 <div class="article04">
-        <p class="article04_title">NEWS</p>
-        <div class="article04_imgBox">
-            <img class="article04_imgBox_item" src="img/img04.png" alt="">
-            <img class="article04_imgBox_item" src="img/img05.png" alt="">
-            <img class="article04_imgBox_item" src="img/img06.png" alt="">
-        </div>
-        <p class="article04_text">view more</p>
+    <p class="article04_title">NEWS</p>
+    <div class="article04_imgBox">
+        <img class="article04_imgBox_item" src="img/img04.png" alt="">
+        <img class="article04_imgBox_item" src="img/img05.png" alt="">
+        <img class="article04_imgBox_item" src="img/img06.png" alt="">
+    </div>
+    <p class="article04_text">view more</p>
 </div>
-
 <div class="form">
-        <p class="form_title">CONTACT</p>
-        <form action="" method="">
-            <input type="text" name="name" placeholder="お名前" class="form_name" size="40">
-            <input type="email" name="email" placeholder="メールアドレス" class="form_email" id="" size="40">
-            <textarea name="content" placeholder="お問い合わせ内容" class="form_content" id="" cols="30" rows="10" size="40"></textarea>
-            <input type="submit" value="送信" class="form_submit">
-        </form>
+    <p class="form_title">CONTACT</p>
+    <form action="" method="">
+        <input type="text" name="name" placeholder="お名前" class="form_name" size="40">
+        <input type="email" name="email" placeholder="メールアドレス" class="form_email" id="" size="40">
+        <textarea name="content" placeholder="お問い合わせ内容" class="form_content" id="" cols="30" rows="10" size="40"></textarea>
+        <input type="submit" value="送信" class="form_submit">
+    </form>
 </div>
-
 <!-----------------------footerのはじまり----------------------------->
 <footer>
-        <div class="footer_wrap">
-            <div class="footer_logo">
-                <p>HTML<br>CSS</p>
-            </div>
-
-            <div class="footer_nav">
-                <nav class="footer_nav_right" aria-label="サイトメニュー">
-                    <ul class="footer_nav_list">
-                        <li class="footer_nav_list_item"><a href="index.html">About</a></li>
-                        <li class="footer_nav_list_item"><a href="news.html">News</a></li>
-                        <li class="footer_nav_list_item"><a href="qa.html">Q&A</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <div class="footer_wrap">
+        <div class="footer_logo">
+        <p>HTML<br>CSS</p>
         </div>
-        <div class="footer_copyright">
-            <small class="footer_copyright_text">@HTMLCSS.code</small>
+        <div class="footer_nav">
+            <nav class="footer_nav_right" aria-label="サイトメニュー">
+                <ul class="footer_nav_list">
+                    <li class="footer_nav_list_item"><a href="index.html">About</a></li>
+                    <li class="footer_nav_list_item"><a href="news.html">News</a></li>
+                    <li class="footer_nav_list_item"><a href="qa.html">Q&A</a></li>
+                </ul>
+            </nav>
         </div>
+    </div>
+    <div class="footer_copyright">
+        <small class="footer_copyright_text">@HTMLCSS.code</small>
+    </div>
 </footer>
 <!-----------------------footerのおわり----------------------------->
 
