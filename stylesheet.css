@@ -63,8 +63,7 @@ body{
 
 /*proposalはじまり-------------------------------------*/
 .proposal{
-    margin-top: 142px;
-    margin-bottom: 200px;
+    margin: 142px 0 200px;
 }
 .proposal_textBox{
     margin: 0;
