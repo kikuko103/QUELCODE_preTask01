@@ -149,6 +149,7 @@ body{
 }
 .news_imgBox_item{
     width: 30%;
+    object-fit: cover;
 }
 .news_text{
     display: block;
