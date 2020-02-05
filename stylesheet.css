@@ -66,7 +66,7 @@ body{
     margin: 142px 0 200px;
 }
 .proposal_textBox{
-    margin: 0;
+    margin: 0 100px;
     padding-left: 632px;
     background-image: url("img/img02.png");
     background-repeat: no-repeat;
