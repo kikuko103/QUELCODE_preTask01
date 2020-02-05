@@ -279,6 +279,7 @@ body{
 }
 .newsPage_article_latestInfo_imgBox_item{
     width: 30%;
+    object-fit: cover;
 }
 /*newsPageおわり-------------------------------------*/
 
