@@ -185,14 +185,13 @@ body{
     border-radius: 11px;
     opacity: 0.6;
     margin: 30px auto 0;
-    padding-left: 17px;
+    padding: 10px;
 }
 .form_name, .form_email{
     height: 35px;
 }
 .form_content{
     height: 156px;
-    padding-top: 11px;
 }
 .form_submit{
     display: block;
