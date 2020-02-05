@@ -110,9 +110,9 @@ body{
 .style_backgroundImg{
     background-image: url("img/img03.png");
     background-repeat: no-repeat;
+    background-size: cover;
     height: 503px;
-    width: 964px;
-    margin: 0 auto;
+    margin: 0 158px;
 }
 .style_dotBox{
     display: flex;
