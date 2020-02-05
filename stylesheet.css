@@ -135,6 +135,9 @@ body{
 /*styleのおわり-------------------------------------*/
 
 /*newsはじまり-------------------------------------*/
+.news{
+    margin-bottom: 220px;
+}
 .news_title{
     text-align: center;
     letter-spacing: 2.5px;
@@ -154,7 +157,7 @@ body{
 .news_text{
     display: block;
     text-align: center;
-    margin: 40px auto 220px;
+    margin-top: 40px;
     text-decoration: none;
     color: #3B3B3B;
 }
