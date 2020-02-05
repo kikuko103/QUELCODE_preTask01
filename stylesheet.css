@@ -97,6 +97,9 @@ body{
 /*proposalのおわり-------------------------------------*/
 
 /*styleはじまり-------------------------------------*/
+.style{
+    margin-bottom: 210px;
+}
 .style_title{
     width: 194px;
     height: 29px;
@@ -117,7 +120,7 @@ body{
 .style_dotBox{
     display: flex;
     justify-content: center;
-    margin: 30px auto 210px;
+    margin-top: 30px;
 }
 .dot, .dot_center{
     background: #A5A5A5;
