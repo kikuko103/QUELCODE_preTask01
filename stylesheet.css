@@ -115,12 +115,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 503px;
-    margin: 0 158px;
+    margin: 0 158px 30px;
 }
 .style_dotBox{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
 }
 .dot, .dot_center{
     background: #A5A5A5;
@@ -153,11 +152,11 @@ body{
 .news_imgBox_item{
     width: 30%;
     object-fit: cover;
+    margin-bottom: 40px;
 }
 .news_text{
     display: block;
     text-align: center;
-    margin-top: 40px;
     text-decoration: none;
     color: #3B3B3B;
 }
