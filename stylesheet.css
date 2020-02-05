@@ -4,382 +4,327 @@
 body{
     background: #FCFCFC;
     margin: 0;
+    font-family: 'Noto Sans'
 }
 /*headerはじまり-------------------------------------*/
 .header_wrap{
     height: 60px;
     width: 100%;
     display: flex;
-    /*display: inline-flexだとこのdiv自体もinline化する*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px;
 }
-
 .header_logo p{
-/*text-align: center;
-font: SemiBold 16px/16px Gill Sans;
-letter-spacing: 0;
-color: #918F89;
-opacity: 1;*/
     display: inline-block;
     text-align: center;
-    font-size: 16px;/*ここきいてない効いてない19pxになってる*/
-    font-family: 'SemiBold';/*ここ合ってるかわからん*/
-    font-family: 'Gill Sans';
+    font-weight: 900;
     color: #918F89;
-    margin: 15px 0 0 88px;
-    height: 35px;
+    font-size: 16px;
 }
 .header_nav{
-    margin-top: 25px;
-    margin-right: 90px;
-    margin-left: auto;
     width: 335px;
-    height: 35px;
-
 }
 .header_nav_list{
-    padding: 0;
-    margin: 0;
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
-.header_nav_list_item{
-    line-height: 22px;
-
-}
 .header_nav_list_item a{
-    /*text-align: left;
-font: ExtraLight 16px/22px Noto Sans;
-letter-spacing: 0;
-color: #272727;
-opacity: 1;*/
-    font-family: 'Noto Sans';
-    font-weight: extraLight;
+    font-weight: lighter;
     text-decoration: none;
     color: #272727;
     opacity: 0.5;
 }
-.header_nav_list_item a :link{
-    box-shadow: 0 3px white;
-}
-.header_nav_list_item a :visited{
-    position: relative;
-    top: 3px;
-    box-shadow: none;
-}
-/*linkとvisited　うまく作用してない
-a:link{
-    text-decoration: none;
-    color: #272727;
-    opacity: 0.5;
-    vertical-align: baseline;
-}
-a:visited{
-    text-decoration: underline;
-    color: #272727;
-    opacity: 1;
-    vertical-align: bottom;
-}*/
 /*headerおわり-------------------------------------*/
 
-/*article01はじまり-------------------------------------*/
-.article01_wrap{
+/*about_topはじまり-------------------------------------*/
+.about_top{
+    background-image: url("img/img01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 741px;
     position: relative;
-    width: 100%;
-    margin-bottom: 10%;
 }
-.img01{
-    width: 100%;
-    height: auto;
-}
-.article01_text{
-    font-size: 5vw;
-    /*あんまりvwわかってない*/
+.about_top_text{
     position: absolute;
-    top: 35%;
+    top: 264px;
+    width: 702px;
+    height: 136px;
+    padding: 31px 60px 23px 88px;
+    line-height: 82px;
+    font-size: 60px;
+    font-weight: lighter;
     letter-spacing: 3px;
     color: #918F89;
-    background-color: #FFFFFF;
-    opacity: 0.8;
-    margin: 0;
-    padding: 1% 4%;
-    font-weight: lighter;
+    background-color: rgb(255, 255, 255, 0.8);
 }
-/*article01のおわり-------------------------------------*/
+/*about_topのおわり-------------------------------------*/
 
-/*article02はじまり-------------------------------------*/
-.article02_wrap{
-    display: flex;
-    margin-bottom: 15%;
+/*proposalはじまり-------------------------------------*/
+.proposal{
+    margin: 142px 0 200px;
 }
-.article02_imgBox{
-    width: 45%;
-    margin-left: 5%;
+.proposal_textBox{
+    margin: 0 100px;
+    padding-left: 632px;
+    background-image: url("img/img02.png");
+    background-repeat: no-repeat;
+    background-size: 544px 500px;
+    background-position: left 88px top 0;
+    height: 500px;
 }
-.img02{
-    width: 100%;
+.proposal_textBox h2, .proposal_textBox p{
+    margin-left: 70px;
 }
-.article02_textBox{
-    width: 55%;
-    padding-left: 5%;
-    
-}
-.article02_textBox_h1Wrap{
-    position: relative;
-    height: 50%;
-}
-.article02_textBox_h1Wrap h1{
-    position: absolute;
-    bottom: 0;
-    font-size: 2.5vw;
+.proposal_textBox h2{
+    padding-top: 201px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: lighter;
     letter-spacing: 2.5px;
     color: #3B3B3B;
 }
-.article02_textBox_pWrap{
-    height: 50%;
-}
-.article02_textBox_pWrap p{
-    font-size: 1.1vw;
-    
+.proposal_textBox p{
+    padding-top: 40px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 100;
     letter-spacing: 0.36px;
     color: #3B3B3B;
 }
-/*article02のおわり-------------------------------------*/
+/*proposalのおわり-------------------------------------*/
 
-/*article03はじまり-------------------------------------*/
-.article03_title{
-    text-align: center;
+/*styleはじまり-------------------------------------*/
+.style{
+    margin-bottom: 210px;
+}
+.style_title{
+    width: 194px;
+    height: 29px;
+    margin: 0 auto 50px;
+    font-size: 25px;
+    line-height: 29px;
+    font-weight: 100;
     letter-spacing: 2.5px;
-    font-size: 2.5vw;
     color: #3B3B3B;
 }
-.article03 img{
-    width: 75%;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
+.style_backgroundImg{
+    background-image: url("img/img03.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 503px;
+    margin: 0 158px 30px;
 }
-.article03_dotBox{
+.style_dotBox{
     display: flex;
     justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 10%;
+}
+.dot, .dot_center{
+    background: #A5A5A5;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    margin: 0 1px;
 }
 .dot{
-    background: #A5A5A5;
-    border-radius: 50%;
-    width: 6px;
-    height: 6px;
     opacity: 0.3;
-    margin: 0 1px;
 }
-.dot_center{
-    background: #A5A5A5;
-    border-radius: 50%;
-    width: 6px;
-    height: 6px;
-    opacity: 1;
-    margin: 0 1px;
-}
-/*article03のおわり-------------------------------------*/
+/*styleのおわり-------------------------------------*/
 
-/*article04はじまり-------------------------------------*/
-.article04_title{
+/*newsはじまり-------------------------------------*/
+.news{
+    margin-bottom: 220px;
+}
+.news_title{
     text-align: center;
     letter-spacing: 2.5px;
-    font-size: 2.5vw;
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 50px;
 }
-.article04_imgBox{
-    width: 85%;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+.news_imgBox{
+    margin: 0 89px;
     display: flex;
     justify-content: space-between;
 }
-.article04_imgBox_item{
+.news_imgBox_item{
     width: 30%;
+    object-fit: cover;
+    margin-bottom: 40px;
 }
-.article04_text{
+.news_text{
+    display: block;
     text-align: center;
-    margin-bottom: 15%;
+    text-decoration: none;
+    color: #3B3B3B;
 }
-/*article04おわり-------------------------------------*/
+/*newsおわり-------------------------------------*/
 
 /*formはじまり-------------------------------------*/
+.form{
+    margin-bottom: 221px;
+}
 .form_title{
+    font-weight: 100;
+    font-size: 25px;
     text-align: center;
-    font-size: 2.5vw;
+    margin-bottom: 30px;    
+}
+.form_name, .form_email, .form_content{
+    display: block;
+    width: 35%;
+    text-align: left;
+    font-weight: 100;
+    letter-spacing: 0.6px;
+    color: #3B3B3B;
+    opacity: 0.4;
+    background: #FFFFFF;
+    border: 0.5px solid #707070;
+    border-radius: 11px;
+    opacity: 0.6;
+    margin: 30px auto 0;
+    padding: 10px;
 }
 .form_name, .form_email{
-    display: block;
-    width: 35%;
-    height: 3vw;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0.5px solid #707070;
-    border-radius: 11px;
-    opacity: 0.6;
+    height: 35px;
 }
 .form_content{
-    display: block;
-    width: 35%;
-    height: 15vw;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0.5px solid #707070;
-    border-radius: 11px;
-    opacity: 0.6;
+    height: 156px;
 }
 .form_submit{
     display: block;
-    width: 6.5%;
-    margin-top: 7%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #D1D1D1;
-    color: #707070;
+    width: 111px;
+    height: 35px;
+    margin: 60px auto 0;
+    background-color: #707070;
+    color: #FFFFFF;
     letter-spacing: 0.75px;
     border-radius: 45px;
-    margin-bottom: 20%;
     border-style: none;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    font-size: 15px;
+    font-weight: lighter;
 }
-
 /*formおわり-------------------------------------*/
 
 /*footerはじまり-------------------------------------*/
-footer{
+.footer{
     background-color: #918F89;
+    height: 284px;
+    padding: 115px 220px 115px 220px;    
 }
 .footer_wrap{
-    height: 284px;
-    width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    /*display: inline-flexだとこのdiv自体もinline化する*/
-}
-.footer_logo{
-    width: 50%;
-}
-.footer_nav{
-    width: 50%;
+    margin-bottom: 60px;
 }
 .footer_logo p{
     display: inline-block;
     text-align: center;
     color: #FFFFFF;
-    font-weight: bold;
+    font-weight: 900;
     line-height: 16px;
-    margin-left: 30%;
 }
 .footer_nav_list{
     list-style: none;
-    margin-right: 30%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 .footer_nav_list_item{
     margin-left: 90px;
 }
 .footer_nav_list_item a{
+    font-weight: lighter;
     text-decoration: none;
     color: #FFFFFF;
-    opacity: 0.5;
 }
 .footer_copyright{
     text-align: center;
-    padding-bottom: 2.5%;
 }
 .footer_copyright_text{
     letter-spacing: 0.4px;
+    line-height: 14px;
+    font-size: xx-small;
+    font-weight: lighter;
     color: #FFFFFF;
 }
 /*footerおわり-------------------------------------*/
 
 /*newsPageはじまり-------------------------------------*/
-.newsPage_imgItem{
-    width: 100%;
-    vertical-align: bottom;
-}
-.newsPage_wrap{
+.newsPage_top{
+    background-image: url("img/img07.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 415px;
     position: relative;
 }
-.newsPage_text{
+.newsPage_top_text{
+    font-size: 30px;
+    font-weight: lighter;
     position: absolute;
-    padding-left: 20%;
-    top: 40%;
-    font-size: 2vw;
-    margin: 0;
-    /*これだめtransform: translateY(-50%)*/
+    top: 179px;
+    left: 228px;
     letter-spacing: 3px;
-    color: rgb(97, 85, 85);
-    text-shadow: 5px 5px 1px  rgb(97, 85, 85, 0.1);
+    color: #918F89;
+    text-shadow: 5px 5px 1px rgb(145, 143, 137, 0.1);
 }
-.newsPage_article01_title{
+.newsPage_article_latestInfo_title{
     text-align: center;
-    letter-spacing: 2.5px;
-    font-size: 2.5vw;
-    margin: 10% 0;
+    letter-spacing: 2.1px;
+    font-weight: lighter;
+    color: #3B3B3B;
+    font-size: 20px;
+    margin: 80px auto;
 }
-.newsPage_article01_imgBox{
-    width: 85%;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-    margin-bottom: 25%;
+.newsPage_article_latestInfo_imgBox{
+    margin: 0 89px 320px;
     display: flex;
     justify-content: space-between;
 }
-.newsPage_article01_imgBox_item{
+.newsPage_article_latestInfo_imgBox_item{
     width: 30%;
+    object-fit: cover;
 }
 /*newsPageおわり-------------------------------------*/
 
 /*qaPageはじまり-------------------------------------*/
-.qaPage_imgItem{
-    width: 100%;
-    vertical-align: bottom;
-}
-.qaPage_wrap{
+.qaPage_top{
+    background-image: url("img/img08.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 415px;
     position: relative;
 }
-.qaPage_text{
+.qaPage_top_text{
+    font-size: 30px;
+    font-weight: lighter;
     position: absolute;
-    padding-left: 20%;
-    top: 40%;
-    font-size: 2vw;
-    margin: 0;
-    /*これだめtransform: translateY(-50%)*/
+    top: 179px;
+    left: 228px;
     letter-spacing: 3px;
-    color: rgb(255, 255, 255);
-    text-shadow: 5px 5px 1px  rgb(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    text-shadow: 5px 5px 1px rgb(255, 255, 255, 0.1);
 }
-.qaPage_article01_title{
+.qaPage_article_frequentlyQA_title{
     text-align: center;
     letter-spacing: 2.5px;
-    font-size: 2.5vw;
-    margin: 7% 0;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 98px auto 73px;
 }
 .qaBox_item{
     width: 45%;
-    margin: 10% auto;
+    margin: 0 auto 100px;
     display: flex;
     justify-content: space-between;
-    font-size: 1.5vw;
+    font-weight: lighter;
 }
-.qaBox_item_text{
-    margin: 0;
+.qaPage_article_frequentlyQA{
+    margin-bottom: 215px;/*子要素のmargin-bottomは相殺されてる*/
 }
-/*くの字矢印、あんまわかってない*/
-.qaBox_item_arrow{
-    width: 1.5vw;
-    height: 1.5vw;
-    border: 1px solid;
-    border-color:  transparent transparent #565656 #565656;
-    transform: rotate(-45deg);
-    }
-.qaBox{
-
+.fa-angle-down{
+    color: #00000034;
 }
 /*qaPageおわり-------------------------------------*/
