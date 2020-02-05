@@ -164,6 +164,9 @@ body{
 /*newsおわり-------------------------------------*/
 
 /*formはじまり-------------------------------------*/
+.form{
+    margin-bottom: 221px;
+}
 .form_title{
     font-weight: 100;
     font-size: 25px;
@@ -196,7 +199,7 @@ body{
     display: block;
     width: 111px;
     height: 35px;
-    margin: 60px auto 221px;
+    margin: 60px auto 0;
     background-color: #707070;
     color: #FFFFFF;
     letter-spacing: 0.75px;
