@@ -13,6 +13,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 90px;
 }
 .header_logo p{
     display: inline-block;
@@ -20,14 +21,9 @@ body{
     font-weight: 900;
     color: #918F89;
     font-size: 16px;
-    padding-left: 88px;
 }
 .header_nav{
-    margin-top: 25px;
-    margin-right: 90px;
-    margin-left: auto;
     width: 335px;
-    height: 35px;
 }
 .header_nav_list{
     list-style: none;
