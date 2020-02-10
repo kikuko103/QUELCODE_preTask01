@@ -14,7 +14,7 @@
 <!-----------------------headerのはじまり----------------------------->
 
 <!--CSSで、positionじゃなくてflexbox(display:flex)使ってるバージョンで作成-->
-<header>
+<header class="header">
     <div class="header_wrap">
         <div class="header_logo">
             <p>HTML<br>CSS</p>
@@ -32,18 +32,19 @@
 </header>
 <!-----------------------headerのおわり----------------------------->
 <div class="about_top">
-    <h1 class="about_top_text">We&nbsp;propose&nbsp;a&nbsp;life.</h1>
+    <h1 class="about_top_text"><span class="about_top_text_item">We </span><span class="br"></span><span class="about_top_text_item">proposes </span><span class="br"></span><span class="about_top_text_item">a life.</span></h1>
 </div>
 <section class="proposal">    
     <div class="proposal_textBox">
         <h2>暮らしを提案する。</h2>
         <p>
-            私たちは、家具を売るのではなく、お客様の理想とする<br>
+            私たちは、家具を売るのではなく、<span class="br"></span>お客様の理想とする<br>
             「暮らし」を提案します。<br>
             仕事で疲れた後に帰りたくなる、<br>
             今日も１日頑張ろうと思える、<br>
-            そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。
+            そんな空間をお客様と一緒に作り上げていくのが<span class="br"></span>私たちの仕事です。
         </p>
+        <div class="proposal_sp_backgroundImg"></div>
     </div>
 </section>
 <section class="style">
@@ -71,6 +72,7 @@
         <input type="email" name="email" placeholder="メールアドレス" class="form_email" size="40">
         <textarea name="content" placeholder="お問い合わせ内容" class="form_content" id="" cols="30" rows="10" size="40"></textarea>
         <input type="submit" value="SEND" class="form_submit">
+        <input type="submit" value="Send" class="form_submit_sp">
     </form>
 </section>
 <!-----------------------footerのはじまり----------------------------->
