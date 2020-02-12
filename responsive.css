@@ -20,15 +20,14 @@ body{
     left: 0;
 }
 .header_logo{
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 .header_logo p{
     display: inline-block;/*これないとtext崩れる*/
     text-align: center;
     font-size: 16px;
     color: #FFFFFF;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 .header_nav{
     display: none;
