@@ -97,7 +97,7 @@ span.br::before{
 
 /*styleはじまり-------------------------------------*/
 .style{
-    margin-bottom: 140px;
+    margin: 0 15px 140px;
 }
 .style_title{
     font-size: 25px;
@@ -107,7 +107,14 @@ span.br::before{
     color: #3B3B3B;
     text-align: center;
     margin-bottom: 30px;
+
+    background-image: url("img/img03.png");
+    background-repeat: no-repeat;
+    background-size: 359px 290px;
+    background-position: left 0 top 100px;
+    height: 400px;
 }
+/*
 .style_backgroundImg{
     background-image: url("img/img03.png");
     background-repeat: no-repeat;
@@ -115,6 +122,7 @@ span.br::before{
     height: 290px;
     margin: 0 15px 30px;
 }
+*/
 .style_dotBox{
     display: flex;
     justify-content: center;
