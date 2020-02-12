@@ -114,15 +114,6 @@ span.br::before{
     background-position: left 0 top 100px;
     height: 400px;
 }
-/*
-.style_backgroundImg{
-    background-image: url("img/img03.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 290px;
-    margin: 0 15px 30px;
-}
-*/
 .style_dotBox{
     display: flex;
     justify-content: center;
