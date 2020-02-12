@@ -87,13 +87,11 @@ span.br::before{
     letter-spacing: 0.42px;
     color: #3B3B3B;
     margin-bottom: 30px;
-}
-.proposal_sp_backgroundImg{
     background-image: url("img/img02.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 266px;
-    margin: 0 10px;
+    background-size: contain;
+    background-position: left 0 top 300px;
+    height: 600px;
 }
 /*proposalのおわり-------------------------------------*/
 
