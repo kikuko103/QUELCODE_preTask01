@@ -135,6 +135,9 @@ span.br::before{
 /*styleのおわり-------------------------------------*/
 
 /*newsはじまり-------------------------------------*/
+.news{
+    margin-bottom: 140px;
+}
 .news_title{
     font-size: 25px;
     font-weight: 100;
@@ -162,7 +165,6 @@ span.br::before{
     font-size: 21px;
     font-weight: 100;
     letter-spacing: 1.05px;
-    margin-bottom: 140px;
 }
 /*newsおわり-------------------------------------*/
 
