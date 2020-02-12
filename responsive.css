@@ -70,7 +70,7 @@ span.br::before{
 
 /*proposalはじまり-------------------------------------*/
 .proposal{
-    margin-bottom: 140px;
+    margin: 0 15px 140px;
 }
 .proposal_textBox h2{
     text-align: center;
@@ -92,9 +92,8 @@ span.br::before{
     background-image: url("img/img02.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 286px;
     height: 266px;
-    margin: 0 auto;
+    margin: 0 10px;
 }
 /*proposalのおわり-------------------------------------*/
 
