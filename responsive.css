@@ -165,6 +165,8 @@ span.br::before{
 /*formはじまり-------------------------------------*/
 .form{
     margin: 0 50px 178px;
+    position: relative;
+    z-index: -1;
 }
 .form_title{
     text-align: center;
