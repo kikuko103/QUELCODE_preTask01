@@ -226,9 +226,8 @@ span.br::before{
     height: 276px;
     padding-top: 86px;
 }
-.footer_wrap{
-    display: flex;
-    justify-content: center;
+.footer_logo{
+    text-align: center;
 }
 .footer_logo p{
     display: inline-block;
