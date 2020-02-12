@@ -99,6 +99,9 @@ span.br::before{
 /*proposalのおわり-------------------------------------*/
 
 /*styleはじまり-------------------------------------*/
+.style{
+    margin-bottom: 140px;
+}
 .style_title{
     font-size: 25px;
     font-weight: 100;
@@ -118,7 +121,6 @@ span.br::before{
 .style_dotBox{
     display: flex;
     justify-content: center;
-    margin-bottom: 140px;
 }
 .dot, .dot_center{
     background: #A5A5A5;
