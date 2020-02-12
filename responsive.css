@@ -69,6 +69,9 @@ span.br::before{
 /*about_topのおわり-------------------------------------*/
 
 /*proposalはじまり-------------------------------------*/
+.proposal{
+    margin-bottom: 140px;
+}
 .proposal_textBox h2{
     text-align: center;
     font-size: 25px;
@@ -91,7 +94,7 @@ span.br::before{
     background-size: cover;
     width: 286px;
     height: 266px;
-    margin: 0 auto 140px;
+    margin: 0 auto;
 }
 /*proposalのおわり-------------------------------------*/
 
