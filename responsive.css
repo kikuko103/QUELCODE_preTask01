@@ -166,7 +166,7 @@ span.br::before{
 
 /*formはじまり-------------------------------------*/
 .form{
-    margin: 0 50px;
+    margin: 0 50px 178px;
 }
 .form_title{
     text-align: center;
@@ -212,7 +212,6 @@ span.br::before{
     border-style: none;
     font-size: 15px;
     font-weight: lighter;
-    margin-bottom: 178px;
 }
 /*formおわり-------------------------------------*/
 
