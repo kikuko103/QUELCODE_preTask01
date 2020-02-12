@@ -12,7 +12,6 @@ body{
 
 /*headerはじまり-------------------------------------*/
 .header{
-    height: 55px;
     background-color: #918F89;
     width: 100%;
     position: fixed;
@@ -26,7 +25,7 @@ body{
     text-align: center;
     font-size: 16px;
     color: #FFFFFF;
-    padding: 11px 0;
+    padding: 12px 0;
 }
 .header_nav{
     display: none;
