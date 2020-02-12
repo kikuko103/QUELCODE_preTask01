@@ -132,7 +132,7 @@ span.br::before{
 
 /*newsはじまり-------------------------------------*/
 .news{
-    margin-bottom: 140px;
+    margin: 0 40px 140px;
 }
 .news_title{
     font-size: 25px;
@@ -149,9 +149,9 @@ span.br::before{
 }
 .news_imgBox_item{
     display: block;
-    width: 286px;
+    width: 100%;
     height: 276px;
-    margin: 0 auto 30px;
+    margin-bottom: 30px;
 }
 .news_text{
     display: block;
