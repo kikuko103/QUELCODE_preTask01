@@ -292,6 +292,12 @@ body{
     width: 30%;
     object-fit: cover;
 }
+.newsPage_article_latestInfo_text{
+    display: none;
+}
+.newsPage_article_latestInfo_icon{
+    display: none;
+}
 /*newsPageおわり-------------------------------------*/
 
 /*qaPageはじまり-------------------------------------*/
