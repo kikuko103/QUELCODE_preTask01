@@ -17,6 +17,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 .header_logo{
     text-align: center;
@@ -165,8 +166,6 @@ span.br::before{
 /*formはじまり-------------------------------------*/
 .form{
     margin: 0 50px 178px;
-    position: relative;
-    z-index: -1;
 }
 .form_title{
     text-align: center;
