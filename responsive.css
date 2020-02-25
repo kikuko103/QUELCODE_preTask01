@@ -300,7 +300,7 @@ span.br::before{
 .qaPage_top_text{
     background-image: url("img/sp_03.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
     height: 500px;
     text-align: center;
