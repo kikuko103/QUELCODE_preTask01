@@ -109,7 +109,7 @@ span.br::before{
 
     background-image: url("img/img03.png");
     background-repeat: no-repeat;
-    background-size: 359px 290px;
+    background-size: 384px 290px;
     background-position: left 0 top 100px;
     height: 400px;
 }
@@ -242,10 +242,97 @@ span.br::before{
     font-weight: lighter;
     color: #FFFFFF;
 }
-
-
-
 /*footerおわり-------------------------------------*/
+
+/*newsPageはじまり-------------------------------------*/
+.newsPage_top_text{
+    background-image: url("img/sp_02.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+    text-align: center;
+    padding-top: 130px;
+    margin-bottom: 70px;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #918F89;
+}
+.newsPage_article_latestInfo{
+    margin: 0 40px 70px;
+}
+.newsPage_article_latestInfo_title{
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 100;
+    letter-spacing: 2.1px;
+    color: #3B3B3B;
+}
+.newsPage_article_latestInfo_imgBox{
+    width: 100%;
+    margin-bottom: 70px;
+}
+.newsPage_article_latestInfo_imgBox_item{
+    width: 100%;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+.newsPage_article_latestInfo_text{
+    text-align: center;
+    font-size: 21px;
+    letter-spacing: 1.05px;
+    color: #3B3B3B;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.newsPage_article_latestInfo_icon{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #00000034;
+    font-size: 40px;
+}
+/*newsPageおわり-------------------------------------*/
+
+/*qaPageはじまり-------------------------------------*/
+.qaPage_top_text{
+    background-image: url("img/sp_03.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    height: 500px;
+    text-align: center;
+    padding-top: 130px;
+    margin-bottom: 76px;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+}
+.qaPage_article_frequentlyQA{
+    margin: 0 8% 250px;
+}
+.qaPage_article_frequentlyQA_title{
+    text-align: center;
+    font-size: 21px;
+    font-weight: 100;
+    letter-spacing: 2.1px;
+    color: #3B3B3B;
+    margin-bottom: 50px;
+}
+.qaBox_item{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 100;
+}
+
+/*qaPageおわり-------------------------------------*/
+
+
+
 
 
 }
