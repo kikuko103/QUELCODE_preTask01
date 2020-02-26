@@ -100,25 +100,23 @@ body{
 
 /*styleはじまり-------------------------------------*/
 .style{
-    margin-bottom: 210px;
+ margin-bottom: 210px;
 }
 .style_title{
-    width: 194px;
-    height: 29px;
-    margin: 0 auto 50px;
+    margin-bottom: 30px;
+    text-align: center;
     font-size: 25px;
     line-height: 29px;
     font-weight: 100;
     letter-spacing: 2.5px;
-    color: #3B3B3B;
 }
-.style_backgroundImg{
+ .style_backgroundImg{
     background-image: url("img/img03.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 503px;
     margin: 0 158px 30px;
-}
+} 
 .style_dotBox{
     display: flex;
     justify-content: center;
