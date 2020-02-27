@@ -151,23 +151,19 @@ span.br::before{
     position: relative;
     margin: 0 auto 30px;
 } 
-#couch {
-    background-image: url("img/img04.png");
+#couch, #chair, #table {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+#couch {
+    background-image: url("img/img04.png");
 }
 #chair {
     background-image: url("img/img05.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 #table {
     background-image: url("img/img06.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 .product_style p{
     position: absolute;
@@ -178,7 +174,6 @@ span.br::before{
     transition: 0.3s ease;
     width: 100%;
     text-align: center;
-    opacity: 0.8;
 }
 .product_style::before {
     content: "";
