@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,57 +13,71 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
 </head>
+
 <body>
-<!-----------------------headerのはじまり----------------------------->
-<header class="header">
-    <div class="header_wrap">
-        <div class="header_logo">
-            <p>HTML<br>CSS</p>
+    <!-----------------------headerのはじまり----------------------------->
+    <header class="header">
+        <div class="header_wrap">
+            <div class="header_logo">
+                <p>HTML<br>CSS</p>
+            </div>
+            <div class="header_nav">
+                <nav class="header_nav_right" aria-label="サイトメニュー">
+                    <ul class="header_nav_list">
+                        <li class="header_nav_list_item"><a href="index.html">About</a></li>
+                        <li class="header_nav_list_item"><a href="news.html">News</a></li>
+                        <li class="header_nav_list_item"><a href="qa.html">Q&A</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="header_nav">
-            <nav class="header_nav_right" aria-label="サイトメニュー">
-                <ul class="header_nav_list">
-                    <li class="header_nav_list_item"><a href="index.html">About</a></li>
-                    <li class="header_nav_list_item"><a href="news.html">News</a></li>
-                    <li class="header_nav_list_item"><a href="qa.html">Q&A</a></li>
-                </ul>
-            </nav>
-        </div>
+    </header>
+    <!-----------------------headerのおわり----------------------------->
+    <div class="qaPage_top">
+        <h1 class="qaPage_top_text">Q&A</h1>
     </div>
-</header>
-<!-----------------------headerのおわり----------------------------->
-<div class="qaPage_top">
-    <h1 class="qaPage_top_text">Q&A</h1>
-</div>
-</div>
-<section class="qaPage_article_frequentlyQA">
-    <h2 class="qaPage_article_frequentlyQA_title">よくある質問</h2>
-    <div class="qaBox">
-        <div class="qaBox_item">
-            <p class="qaBox_item_text">家具の取り置きは可能でしょうか</p>
-            <i class="fas fa-angle-down"></i>
-        </div>
-        <div class="qaBox_item">
-            <p class="qaBox_item_text">家具の取り置きは可能でしょうか</p>
-            <i class="fas fa-angle-down"></i>
-        </div>
-        <div class="qaBox_item">
-            <p class="qaBox_item_text">家具の取り置きは可能でしょうか</p>
-            <i class="fas fa-angle-down"></i>
-        </div>
-        <div class="qaBox_item">
-            <p class="qaBox_item_text">家具の取り置きは可能でしょうか</p>
-            <i class="fas fa-angle-down"></i>
-        </div>
-        <div class="qaBox_item">
-            <p class="qaBox_item_text">家具の取り置きは可能でしょうか</p>
-            <i class="fas fa-angle-down"></i>
-        </div>
     </div>
-</section>
-<!--  下向き矢印の作り方<div class="arrow1"></div>-->
-<!-----------------------footerのはじまり----------------------------->
-<footer class="footer">
+    <section class="qa">
+        <h2 class="qa_title">よくある質問</h2>
+        <div class="qaBox">
+            <!-- <input type="checkbox" class="qa_toggle" />
+
+            <label for="qa_toggle">
+                <p class="qaBox_text">家具の取り置きは可能でしょうか</p>
+                <i class="fas fa-angle-down"></i>
+            </label> -->
+            <p class="qaBox_text">家具の取り置きは可能でしょうか</p>
+            <i class="fas fa-angle-down" id="qa_icon"></i>
+        </div>
+        <p class="qaBox_addText" id="qaBox_addText">可能です。<br>取り置き期間は最大で３週間です。</p>
+
+        <div class="qaBox">
+            <p class="qaBox_text">家具の取り置きは可能でしょうか</p>
+            <i class="fas fa-angle-down"></i>
+        </div>
+        <p class="qaBox_addText">可能です。<br>取り置き期間は最大で３週間です。</p>
+        <div class="qaBox">
+            <p class="qaBox_text">家具の取り置きは可能でしょうか</p>
+            <i class="fas fa-angle-down"></i>
+        </div>
+        <p class="qaBox_addText">可能です。<br>取り置き期間は最大で３週間です。</p>
+        <div class="qaBox">
+            <p class="qaBox_text">家具の取り置きは可能でしょうか</p>
+            <i class="fas fa-angle-down"></i>
+        </div>
+        <p class="qaBox_addText">可能です。<br>取り置き期間は最大で３週間です。</p>
+        <div class="qaBox">
+            <p class="qaBox_text">家具の取り置きは可能でしょうか</p>
+            <i class="fas fa-angle-down"></i>
+        </div>
+        <p class="qaBox_addText">可能です。<br>取り置き期間は最大で３週間です。</p>
+    </section>
+
+
+
+
+    <!-----------------------footerのはじまり----------------------------->
+    <footer class="footer">
         <div class="footer_wrap">
             <div class="footer_logo">
                 <p>HTML<br>CSS</p>
@@ -80,5 +95,10 @@
         <div class="footer_copyright">
             <p class="footer_copyright_text">@HTMLCSS.code</p>
         </div>
-</footer>
-<!-----------------------footerのおわり----------------------------->
+    </footer>
+    <!-----------------------footerのおわり----------------------------->
+
+    <script src="main.js"></script>
+</body>
+
+</html>
