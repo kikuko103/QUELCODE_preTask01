@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,92 +11,105 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
 </head>
-<body>
-<!-----------------------headerのはじまり----------------------------->
 
-<!--CSSで、positionじゃなくてflexbox(display:flex)使ってるバージョンで作成-->
-<header class="header">
-    <div class="header_wrap">
-        <div class="header_logo">
-            <p>HTML<br>CSS</p>
+<body>
+    <!-----------------------headerのはじまり----------------------------->
+
+    <!--CSSで、positionじゃなくてflexbox(display:flex)使ってるバージョンで作成-->
+    <header class="header">
+        <div class="header_wrap">
+            <div class="header_logo">
+                <p>HTML<br>CSS</p>
+            </div>
+            <div class="header_nav">
+                <nav class="header_nav_right" aria-label="サイトメニュー">
+                    <ul class="header_nav_list">
+                        <li class="header_nav_list_item"><a href="index.html">About</a></li>
+                        <li class="header_nav_list_item"><a href="news.html">News</a></li>
+                        <li class="header_nav_list_item"><a href="qa.html">Q&A</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="header_nav">
-            <nav class="header_nav_right" aria-label="サイトメニュー">
-                <ul class="header_nav_list">
-                    <li class="header_nav_list_item"><a href="index.html">About</a></li>
-                    <li class="header_nav_list_item"><a href="news.html">News</a></li>
-                    <li class="header_nav_list_item"><a href="qa.html">Q&A</a></li>
-                </ul>
-            </nav>
+    </header>
+    <!-----------------------headerのおわり----------------------------->
+    <div class="about_top">
+        <h1 class="about_top_text"><span class="about_top_text_item">We </span><span class="br"></span><span
+                class="about_top_text_item">proposes </span><span class="br"></span><span class="about_top_text_item">a
+                life.</span></h1>
+    </div>
+    <section class="proposal">
+        <div class="proposal_textBox">
+            <h2>暮らしを提案する。</h2>
+            <p>
+                私たちは、家具を売るのではなく、<span class="br"></span>お客様の理想とする<br>
+                「暮らし」を提案します。<br>
+                仕事で疲れた後に帰りたくなる、<br>
+                今日も１日頑張ろうと思える、<br>
+                そんな空間をお客様と一緒に作り上げていくのが<span class="br"></span>私たちの仕事です。
+            </p>
         </div>
-    </div>
-</header>
-<!-----------------------headerのおわり----------------------------->
-<div class="about_top">
-    <h1 class="about_top_text"><span class="about_top_text_item">We </span><span class="br"></span><span class="about_top_text_item">proposes </span><span class="br"></span><span class="about_top_text_item">a life.</span></h1>
-</div>
-<section class="proposal">    
-    <div class="proposal_textBox">
-        <h2>暮らしを提案する。</h2>
-        <p>
-            私たちは、家具を売るのではなく、<span class="br"></span>お客様の理想とする<br>
-            「暮らし」を提案します。<br>
-            仕事で疲れた後に帰りたくなる、<br>
-            今日も１日頑張ろうと思える、<br>
-            そんな空間をお客様と一緒に作り上げていくのが<span class="br"></span>私たちの仕事です。
-        </p>
-    </div>
-</section>
-<section class="style">
-    <h2 class="style_title">豊富なスタイル</h2>
-    <div class="style_dotBox">
-        <span class="dot"></span>
-        <span class="dot_center"></span>
-        <span class="dot"></span>
-    </div>
-</section>
-<section class="news">
-    <h2 class="news_title">NEWS</h2>
-    <div class="news_imgBox">
-        <img class="news_imgBox_item" src="img/img04.png" alt="新作商品１">
-        <img class="news_imgBox_item" src="img/img05.png" alt="新作商品２">
-        <img class="news_imgBox_item" src="img/img06.png" alt="新作商品３">
-    </div>
-    <a href="" class="news_text">view more</a>
-</section>
-<section class="form">
-    <h2 class="form_title">CONTACT</h2>
-    <form action="" method="">
-        <input type="text" name="name" placeholder="お名前" class="form_name" >
-        <input type="email" name="email" placeholder="メールアドレス" class="form_email" >
-        <textarea name="content" placeholder="お問い合わせ内容" class="form_content" id="" cols="30" rows="10" ></textarea>
-        <input type="submit" value="SEND" class="form_submit">
-        <input type="submit" value="Send" class="form_submit_sp">
-    </form>
-</section>
-<!-----------------------footerのはじまり----------------------------->
-<footer class="footer">
-    <div class="footer_wrap">
-        <div class="footer_logo">
-        <p>HTML<br>CSS</p>
+    </section>
+    <section class="style">
+        <h2 class="style_title">豊富なスタイル</h2>
+        <div class="style_backgroundImg"></div>
+        <div class="style_dotBox">
+            <span class="dot"></span>
+            <span class="dot_center"></span>
+            <span class="dot"></span>
         </div>
-        <div class="footer_nav">
-            <nav class="footer_nav_right" aria-label="サイトメニュー">
-                <ul class="footer_nav_list">
-                    <li class="footer_nav_list_item"><a href="index.html">About</a></li>
-                    <li class="footer_nav_list_item"><a href="news.html">News</a></li>
-                    <li class="footer_nav_list_item"><a href="qa.html">Q&A</a></li>
-                </ul>
-            </nav>
+    </section>
+    <section class="news">
+        <h2 class="news_title">NEWS</h2>
+        <div class="product_container">
+            <div id="couch" class="product_style">
+                <p class="text">アームストロングのカウチ入荷</p>
+            </div>
+            <div id="chair" class="product_style">
+                <p class="text">アームストロングのチェア再入荷</p>
+            </div>
+            <div id="table" class="product_style">
+                <p class="text">アームストロングのテーブル入荷</p>
+            </div>
         </div>
-    </div>
-    <div class="footer_copyright">
-        <p class="footer_copyright_text">@HTMLCSS.code</p>
-    </div>
-</footer>
-<!-----------------------footerのおわり----------------------------->
+        <a href="" class="news_text">view more</a>
+    </section>
+    <section class="form">
+        <h2 class="form_title">CONTACT</h2>
+        <form action="" method="">
+            <input type="text" name="name" placeholder="お名前" class="form_name">
+            <input type="email" name="email" placeholder="メールアドレス" class="form_email">
+            <textarea name="content" placeholder="お問い合わせ内容" class="form_content" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="SEND" class="form_submit">
+            <input type="submit" value="Send" class="form_submit_sp">
+        </form>
+    </section>
+    <!-----------------------footerのはじまり----------------------------->
+    <footer class="footer">
+        <div class="footer_wrap">
+            <div class="footer_logo">
+                <p>HTML<br>CSS</p>
+            </div>
+            <div class="footer_nav">
+                <nav class="footer_nav_right" aria-label="サイトメニュー">
+                    <ul class="footer_nav_list">
+                        <li class="footer_nav_list_item"><a href="index.html">About</a></li>
+                        <li class="footer_nav_list_item"><a href="news.html">News</a></li>
+                        <li class="footer_nav_list_item"><a href="qa.html">Q&A</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <p class="footer_copyright_text">@HTMLCSS.code</p>
+        </div>
+    </footer>
+    <!-----------------------footerのおわり----------------------------->
+
+    <script src="main.js"></script>
 
 </body>
+
 </html>
 <!--  feature/no01ブランチへのコミット -->
 <!--  feature/no01ブランチへの2回目のコミット -->
