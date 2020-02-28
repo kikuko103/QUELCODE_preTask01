@@ -369,6 +369,7 @@ span.br::before{
 /* JSで表示させる部分 */
 .qaBox_opened {
     visibility: visible;
+    padding-bottom: 50px;
 }
 /* JSで表示させる部分 */
 .qa_rotatte {
