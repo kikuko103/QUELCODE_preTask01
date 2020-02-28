@@ -341,10 +341,10 @@ span.br::before{
     letter-spacing: 3px;
     color: #FFFFFF;
 }
-.qaPage_article_frequentlyQA{
+.qa{
     margin: 0 8% 250px;
 }
-.qaPage_article_frequentlyQA_title{
+.qa_title{
     text-align: center;
     font-size: 21px;
     font-weight: 100;
@@ -352,13 +352,29 @@ span.br::before{
     color: #3B3B3B;
     margin-bottom: 50px;
 }
-.qaBox_item{
+.qaBox{
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     font-weight: 100;
 }
-
+.qaBox i {
+    color: #a1909034;
+    cursor: pointer;
+    transition: all 0.6s 0s ease;
+}
+.qaBox_closed{
+    visibility: hidden;
+}
+/* JSで表示させる部分 */
+.qaBox_opened {
+    visibility: visible;
+    padding-bottom: 50px;
+}
+/* JSで表示させる部分 */
+.qa_rotatte {
+    transform: rotate(-180deg);
+}
 /*qaPageおわり-------------------------------------*/
 
 
