@@ -8,32 +8,11 @@ const qaToggle = (str) => {
     qa.classList.toggle('qaBox_opened');
 }
 
-// SP版のヘッダーアニメーション
-//menuTriggerというdivがクリックされたら、表示させたい
+// SP版のヘッダーアニメーション(ハンバーガー　＋　アコーディオン)
 const humberger = document.getElementById('menuTrigger');
+const accordion = document.getElementById('headerNav');
 
 humberger.onclick = () => {
     humberger.classList.toggle('menuTrigger_opened');
-
-
+    accordion.classList.toggle('header_nav_opened');
 };
-
-
-{/* <div class="menuTrigger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <!-- ハンバーガー実装中 --> */}
-
-
-        // const toggleNav = () => {
-        //     const line = document.getElementById('line');
-        //     const nav = document.getElementById('sp-nav');
-
-        //     line.addEventListener('click', function () {
-        //       line.classList.toggle('active');
-        //       nav.classList.toggle('open');
-        //     });
-        //   }
-        //   toggleNav();

@@ -36,7 +36,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.header_nav_list_item a{
+.header_nav a{
     font-weight: lighter;
     text-decoration: none;
     color: #272727;

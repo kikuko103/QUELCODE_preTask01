@@ -19,9 +19,6 @@ body{
     left: 0;
     z-index: 100;
 }
-.header_nav{
-    display: none;
-}
 .header_logo{
     text-align: center;
 }
@@ -31,7 +28,7 @@ body{
     color: #FFFFFF;
     padding: 12px 0;
 }
-/* <!-- ハンバーガー実装中 --> */
+/*  ハンバーガーメニュー */
 .menuTrigger {
     width: 40px;
     height: 40px;
@@ -51,25 +48,52 @@ body{
     top: 27px;    
 }
 .menuTrigger span:nth-of-type(3){
-    bottom: 14px;
+    top: 40px;
 }
-/* JSで表示させる部分 */
+/* ハンバーガーメニューのJSで表示させる部分 */
 .menuTrigger_opened span:nth-of-type(1){
+    top: 25px;
     transform: rotate(-45deg);
 }
 .menuTrigger_opened span:nth-of-type(2){
     opacity: 0;
 }
 .menuTrigger_opened span:nth-of-type(3){
+    top: 25px;
     transform: rotate(45deg);
 }
 
-/* <!-- ハンバーガー実装中 --> */
+/* アコーディオンメニュー */
+.header_nav {
+    visibility: hidden;
+}
+.header_nav_opened {
+    visibility: visible;
+}
+/*　アコーディオンメニューのJSで表示させる部分 */
+.header_nav_list_middle {
+    border-top: solid 1px;
+    border-top-color: white;
+    border-bottom:solid 1px;
+    border-bottom-color: white;
+}
+.header_nav li {
+    background-color: #918F89;
+    opacity: 0.9;
+    height: 80px;
+    display: table;
+    width: 100%;
+}
+.header_nav a{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 23px;
+} 
 
-/* 
-.header_nav{
-    display: none;
-} */
 /*footer*/
 .footer_nav{
     display: none;
@@ -158,7 +182,7 @@ span.br::before{
 }
 /*style*/
 .style{
-    margin: 0 15px 140px;
+    margin: 0 5% 140px;
 }
 .style_title{
     font-size: 25px;
@@ -168,10 +192,9 @@ span.br::before{
     color: #3B3B3B;
     text-align: center;
     margin-bottom: 30px;
-
     background-image: url("img/img03.png");
     background-repeat: no-repeat;
-    background-size: 384px 290px;
+    background-size: auto 290px;
     background-position: left 0 top 100px;
     height: 400px;
 }

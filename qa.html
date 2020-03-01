@@ -21,17 +21,31 @@
             <div class="header_logo">
                 <p>HTML<br>CSS</p>
             </div>
-            <div class="header_nav">
+            <!-- アコーディオン -->
+            <div class="header_nav" id="headerNav">
                 <nav aria-label="サイトメニュー">
                     <ul class="header_nav_list">
-                        <li class="header_nav_list_item"><a href="index.html">About</a></li>
-                        <li class="header_nav_list_item"><a href="news.html">News</a></li>
-                        <li class="header_nav_list_item"><a href="qa.html">Q&A</a></li>
+                        <li class="header_nav_list_top">
+                            <a href="index.html">About</a>
+                        </li>
+                        <li class="header_nav_list_middle">
+                            <a href="news.html">News</a>
+                        </li>
+                        <li class="header_nav_list_bottom">
+                            <a href="qa.html">Q&A</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
+        <!-- ハンバーガーメニュー -->
+        <div class="menuTrigger" id="menuTrigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+
     <!---------------qaPageTop-------------->
     <div class="qaPage_top">
         <h1 class="qaPage_top_text">Q&A</h1>
