@@ -73,9 +73,9 @@ body{
 /*　アコーディオンメニューのJSで表示させる部分 */
 .header_nav_list_middle {
     border-top: solid 1px;
-    border-top-color: white;
+    border-top-color: #FFFFFF;
     border-bottom:solid 1px;
-    border-bottom-color: white;
+    border-bottom-color: #FFFFFF;
 }
 .header_nav li {
     background-color: #918F89;
@@ -89,7 +89,7 @@ body{
     text-align: center;
     vertical-align: middle;
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
     font-weight: 100;
     font-size: 23px;
 } 
@@ -272,7 +272,7 @@ span.br::before{
     height: 100%;
 }
 .product_style:hover .text {
-    color: white;
+    color: #FFFFFF;
     top: 50%;
 }
 .news_text{

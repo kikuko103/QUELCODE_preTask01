@@ -240,7 +240,7 @@ body{
     height: 100%;
 }
 .product_style:hover .text {
-    color: white;
+    color: #FFFFFF;
     top: 50%;
 }
 .news_text{
