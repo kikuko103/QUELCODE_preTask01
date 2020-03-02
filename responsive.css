@@ -71,6 +71,18 @@ body{
     visibility: visible;
 }
 /*　アコーディオンメニューのJSで表示させる部分 */
+/* 修正対応。隙間 */
+/* table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  } */
+
+.header_nav{
+    position: absolute;
+    top: 55px;
+    width: 100%;
+}
+
 .header_nav_list_middle {
     border-top: solid 1px;
     border-top-color: #FFFFFF;
@@ -79,15 +91,15 @@ body{
 }
 .header_nav li {
     background-color: #918F89;
+    display: table;
     opacity: 0.9;
     height: 80px;
-    display: table;
     width: 100%;
 }
 .header_nav a{
     display: table-cell;
-    text-align: center;
     vertical-align: middle;
+    text-align: center;
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 100;
