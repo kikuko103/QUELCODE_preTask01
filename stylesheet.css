@@ -46,7 +46,7 @@ body{
 .footer{
     background-color: #918F89;
     height: 284px;
-    padding: 115px 220px 115px 220px;    
+    padding: 115px 220px;    
 }
 .footer_wrap{
     display: flex;
