@@ -16,3 +16,4 @@ humberger.onclick = () => {
     humberger.classList.toggle('menuTrigger_opened');
     accordion.classList.toggle('header_nav_opened');
 };
+

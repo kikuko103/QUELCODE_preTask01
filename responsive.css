@@ -28,7 +28,7 @@ body{
     color: #FFFFFF;
     padding: 12px 0;
 }
-/*  ハンバーガーメニュー */
+ /* ハンバーガーメニュー*/
 .menuTrigger {
     width: 40px;
     height: 40px;
@@ -40,6 +40,7 @@ body{
     height: 1px;
     background-color: #FFFFFF;
     border-radius: 4px;
+    transition: all 0.3s;
 }
 .menuTrigger span:nth-of-type(1){
     top: 14px;
@@ -65,38 +66,33 @@ body{
 
 /* アコーディオンメニュー */
 .header_nav {
-    visibility: hidden;
-}
-.header_nav_opened {
-    visibility: visible;
-}
-/*　アコーディオンメニューのJSで表示させる部分 */
-/* 修正対応。隙間 */
-/* table {
-    border-collapse: collapse;
-    border-spacing: 0;
-  } */
-
-.header_nav{
     position: absolute;
     top: 55px;
     width: 100%;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in;   
 }
-
-.header_nav_list_middle {
-    border-top: solid 1px;
-    border-top-color: #FFFFFF;
-    border-bottom:solid 1px;
-    border-bottom-color: #FFFFFF;
+.header_nav_opened{
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
 }
-.header_nav li {
+.list {
+    visibility: visible;
+    opacity: 1;
+    line-height: 80px;
     background-color: #918F89;
     display: table;
     opacity: 0.9;
     height: 80px;
     width: 100%;
+    border-bottom: 1px solid #FFFFFF;
 }
-.header_nav a{
+#anchor {
+    visibility: visible;
+    opacity: 1;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -104,8 +100,7 @@ body{
     color: #FFFFFF;
     font-weight: 100;
     font-size: 23px;
-} 
-
+}
 /*footer*/
 .footer_nav{
     display: none;

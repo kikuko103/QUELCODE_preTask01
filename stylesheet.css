@@ -31,7 +31,7 @@ body{
 .header_nav{
     width: 335px;
 }
-.header_nav_list{
+.header_nav ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
