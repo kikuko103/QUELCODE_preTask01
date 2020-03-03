@@ -12,7 +12,7 @@ body{
 /*共通部分-------------------------------------*/
 /*header*/
 .header {
-    padding: 0 90px 0 90px;
+    padding: 0 90px;
 }
 .header_wrap{
     height: 60px;
