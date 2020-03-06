@@ -8,6 +8,25 @@ body{
     margin: 0;
     font-family: 'Noto Sans'
 }
+
+/* animationの設定 */
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
 /*共通部分-------------------------------------*/
 /*header*/
 .header{
@@ -69,18 +88,15 @@ body{
     position: absolute;
     top: 55px;
     width: 100%;
-    /* display: none; */
-    visibility: hidden;
+    display: none;
     opacity: 0;
     transition: all 0.3s ease-in;   
 }
 .header_nav_opened{
-    /* display: block; */
-    visibility: visible;
+    display: block;
     opacity: 1;
 }
 .list {
-    visibility: visible;
     opacity: 1;
     line-height: 80px;
     background-color: #918F89;
@@ -91,7 +107,6 @@ body{
     border-bottom: 1px solid #FFFFFF;
 }
 #anchor {
-    visibility: visible;
     opacity: 1;
     display: table-cell;
     vertical-align: middle;
@@ -416,14 +431,15 @@ span.br::before{
 .qaBox i {
     color: #a1909034;
     cursor: pointer;
-    transition: all 0.6s 0s ease;
+    transition: all 0.5s 0s ease;
 }
 .qaBox_closed{
-    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s 0s ease;
 }
 /* JSで表示させる部分 */
 .qaBox_opened {
-    visibility: visible;
+    opacity: 1;
     padding-bottom: 50px;
 }
 /* JSで表示させる部分 */

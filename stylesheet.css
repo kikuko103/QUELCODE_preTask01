@@ -8,7 +8,6 @@ body{
     margin: 0;
     font-family: 'Noto Sans'
 }
-
 /*共通部分-------------------------------------*/
 /*header*/
 .header {
@@ -369,15 +368,17 @@ body{
 .qaBox i {
     color: #a1909034;
     cursor: pointer;
-    transition: all 0.6s 0s ease;
+    transition: all 0.5s 0s ease;
 }
 .qaBox_closed{
-    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s 0s ease;
 }
 /* JSで表示させる部分 */
 .qaBox_opened {
-    visibility: visible;
+    opacity: 1;
     padding-bottom: 50px;
+
 }
 /* JSで表示させる部分 */
 .qa_rotatte {

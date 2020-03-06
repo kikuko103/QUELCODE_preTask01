@@ -17,3 +17,14 @@ humberger.onclick = () => {
     accordion.classList.toggle('header_nav_opened');
 };
 
+//
+//
+//
+
+
+
+
+
+// 回答がでてくるときのフェードイン・アウトもやりましょうか！
+// 余力あればPC版のページ切替時のフェードインも！
+
