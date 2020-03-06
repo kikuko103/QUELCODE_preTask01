@@ -196,11 +196,6 @@ body{
     align-items: center;
     margin-bottom: 40px;
 }
-.product_style {
-    width: 334px;
-    height: 387px;
-    position: relative;
-} 
 #couch, #chair, #table {
     background-repeat: no-repeat;
     background-size: cover;
@@ -215,16 +210,22 @@ body{
 #table {
     background-image: url("img/img06.png");
 }
+/* アニメーション */
+.product_style {
+    width: 334px;
+    height: 387px;
+    position: relative;
+} 
 .product_style p{
     position: absolute;
-    left: 50%;
     top: 100%;
-    transform: translate(-50%, -50%);
+    /* 親要素の100%下からくる設定（bottom: 0; の設定では動きが違う） */
     color: transparent;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
     width: 100%;
     text-align: center;
 }
+/* ここの擬似要素でbgcの準備・設定。（heightで隠してる） */
 .product_style::before {
     content: "";
     position: absolute;
