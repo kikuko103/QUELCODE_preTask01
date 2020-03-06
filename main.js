@@ -25,5 +25,14 @@ humberger.onclick = () => {
     }
 }
 
-// 回答がでてくるときのフェードイン・アウトもやりましょうか！
 // 余力あればPC版のページ切替時のフェードインも！
+const a = document.querySelectorAll('a.anchor');
+const pageUrl = location.href;
+for (let i = 0; i < a.length; i++) {
+    const href = a[i].getAttribute('href');
+    if (pageUrl.includes(href)) {
+        console.log('match');
+        a[i].classList.toggle('anchor_position');
+    }
+}
+

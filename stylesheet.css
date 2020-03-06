@@ -3,10 +3,21 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     background: #FCFCFC;
     margin: 0;
-    font-family: 'Noto Sans'
+    font-family: 'Noto Sans';
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }    
 }
 /*共通部分-------------------------------------*/
 /*header*/
@@ -35,11 +46,15 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.header_nav a{
+.anchor{
     font-weight: lighter;
     text-decoration: none;
+    color: rgb(39, 39, 39, 0.5);
+}
+.anchor_position {
     color: #272727;
-    opacity: 0.5;
+    border-bottom: 1px solid #272727;
+    padding-bottom: 18px;
 }
 /*footer*/
 .footer{
