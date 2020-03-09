@@ -1,16 +1,13 @@
 @media(min-width: 671px ){
-
 *{
     box-sizing: border-box;
 }
-
 body{
     background: #FCFCFC;
     margin: 0;
     font-family: 'Noto Sans';
     animation: fadein 0.5s;
 }
-
 @keyframes fadein {
     0%{
         opacity: 0;
