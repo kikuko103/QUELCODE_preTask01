@@ -29,7 +29,6 @@ const pageUrl = location.href;
 for (let i = 0; i < a.length; i++) {
   const href = a[i].getAttribute("href");
   if (pageUrl.includes(href)) {
-    console.log("match");
     a[i].classList.toggle("anchor_position");
   }
 }
