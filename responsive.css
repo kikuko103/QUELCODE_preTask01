@@ -1,5 +1,4 @@
 /*SP版のところ*/
-
 @media(max-width: 670px ){
 *{
     box-sizing: border-box;
@@ -7,13 +6,15 @@
 body{
     background: #FCFCFC;
     margin: 0;
-    font-family: 'Noto Sans'
+    font-family: 'Noto Sans';
 }
 
-/*headerはじまり-------------------------------------*/
+/*共通部分-------------------------------------*/
+/*header*/
 .header{
     background-color: #918F89;
     width: 100%;
+    height: 55px;
     position: fixed;
     top: 0;
     left: 0;
@@ -21,19 +22,117 @@ body{
 }
 .header_logo{
     text-align: center;
+    z-index: 1000;
 }
 .header_logo p{
     text-align: center;
     font-size: 16px;
     color: #FFFFFF;
     padding: 12px 0;
+    
 }
-.header_nav{
+ /* ハンバーガーメニュー*/
+.menuTrigger {
+    width: 40px;
+    height: 40px;
+}
+.menuTrigger span {
+    position: absolute;
+    right: 20px;
+    width: 40px;
+    height: 1px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+.menuTrigger span:nth-of-type(1){
+    top: 14px;
+}
+.menuTrigger span:nth-of-type(2){
+    top: 27px;    
+}
+.menuTrigger span:nth-of-type(3){
+    top: 40px;
+}
+/* ハンバーガーメニューのJSで表示させる部分 */
+.menuTrigger_opened span:nth-of-type(1){
+    top: 25px;
+    transform: rotate(-45deg);
+}
+.menuTrigger_opened span:nth-of-type(2){
+    opacity: 0;
+}
+.menuTrigger_opened span:nth-of-type(3){
+    top: 25px;
+    transform: rotate(45deg);
+}
+
+/* アコーディオンメニュー */
+.header_nav {
+    width: 100%;
+    opacity: 0;
+}
+.header_nav_opened{
+    height: 243px;
+    position: absolute;
+    top: 55px;
+    opacity: 1;
+    animation: show 1s linear 0s;
+}
+.list_item {
+    opacity: 1;
+    line-height: 80px;
+    background-color: #918F89;
+    opacity: 0.9;
+    height: 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #FFFFFF;
+    transition: all 0.3s;
+}
+.list_item.list_item_opened{
+    height: 80px;
+}
+.anchor {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 100;
+    font-size: 0;
+}
+.anchor.anchor_opened {
+    font-size: 23px;
+    padding: 22px 120px;
+}
+/*footer*/
+.footer_nav{
     display: none;
 }
-/*headerおわり-------------------------------------*/
-
-/*about_topはじまり-------------------------------------*/
+.footer{
+    background-color: #918F89;
+    height: 276px;
+    padding-top: 86px;
+}
+.footer_logo{
+    text-align: center;
+}
+.footer_logo p{
+    display: inline-block;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 900;
+    line-height: 16px;
+    margin-bottom: 63px;
+}
+.footer_copyright_text{
+    letter-spacing: 0.4px;
+    text-align: center;
+    line-height: 10px;
+    font-size: xx-small;
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+/*index.htmlの部分-------------------------------------*/
+/*about_top*/
 .about_top{
     margin-top: 55px;
     background-image: url("img/sp_01.png");
@@ -65,9 +164,7 @@ span.br::before{
     content: "\A";
     white-space: pre;
 }
-/*about_topのおわり-------------------------------------*/
-
-/*proposalはじまり-------------------------------------*/
+/*proposal*/
 .proposal{
     margin: 0 15px 140px;
 }
@@ -92,11 +189,9 @@ span.br::before{
     background-position: left 0 top 300px;
     height: 600px;
 }
-/*proposalのおわり-------------------------------------*/
-
-/*styleはじまり-------------------------------------*/
+/*style*/
 .style{
-    margin: 0 15px 140px;
+    margin: 0 5% 140px;
 }
 .style_title{
     font-size: 25px;
@@ -106,10 +201,9 @@ span.br::before{
     color: #3B3B3B;
     text-align: center;
     margin-bottom: 30px;
-
     background-image: url("img/img03.png");
     background-repeat: no-repeat;
-    background-size: 384px 290px;
+    background-size: auto 290px;
     background-position: left 0 top 100px;
     height: 400px;
 }
@@ -127,9 +221,7 @@ span.br::before{
 .dot{
     opacity: 0.3;
 }
-/*styleのおわり-------------------------------------*/
-
-/*newsはじまり-------------------------------------*/
+/*news*/
 .news{
     margin-bottom:140px;
 }
@@ -143,13 +235,14 @@ span.br::before{
     margin-bottom: 85px;
 }
 .product_container {
-    margin: 0 auto  40px;
+    padding: 0 10%;
+    margin-bottom: 50px;
 }
 .product_style {
-    width: 80%;
-    height: 387px; 
+    width: 100%;
+    height: 287px; 
     position: relative;
-    margin: 0 auto 30px;
+    margin-bottom: 30px;
 } 
 #couch, #chair, #table {
     background-repeat: no-repeat;
@@ -167,14 +260,14 @@ span.br::before{
 }
 .product_style p{
     position: absolute;
-    left: 50%;
     top: 100%;
-    transform: translate(-50%, -50%);
+    /* 親要素の100%下からくる設定（bottom: 0; の設定では動きが違う） */
     color: transparent;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
     width: 100%;
     text-align: center;
 }
+/* ここの擬似要素でbgcの準備・設定。（heightで隠してる） */
 .product_style::before {
     content: "";
     position: absolute;
@@ -189,7 +282,7 @@ span.br::before{
     height: 100%;
 }
 .product_style:hover .text {
-    color: white;
+    color: #FFFFFF;
     top: 50%;
 }
 .news_text{
@@ -201,9 +294,7 @@ span.br::before{
     font-weight: 100;
     letter-spacing: 1.05px;
 }
-/*newsおわり-------------------------------------*/
-
-/*formはじまり-------------------------------------*/
+/*form*/
 .form{
     margin: 0 50px 178px;
 }
@@ -252,39 +343,8 @@ span.br::before{
     font-size: 15px;
     font-weight: lighter;
 }
-/*formおわり-------------------------------------*/
-
-/*footerはじまり-------------------------------------*/
-.footer_nav{
-    display: none;
-}
-.footer{
-    background-color: #918F89;
-    height: 276px;
-    padding-top: 86px;
-}
-.footer_logo{
-    text-align: center;
-}
-.footer_logo p{
-    display: inline-block;
-    text-align: center;
-    color: #FFFFFF;
-    font-weight: 900;
-    line-height: 16px;
-    margin-bottom: 63px;
-}
-.footer_copyright_text{
-    letter-spacing: 0.4px;
-    text-align: center;
-    line-height: 10px;
-    font-size: xx-small;
-    font-weight: lighter;
-    color: #FFFFFF;
-}
-/*footerおわり-------------------------------------*/
-
-/*newsPageはじまり-------------------------------------*/
+/*news.htmlの部分-------------------------------------*/
+/*newsPage*/
 .newsPage_top_text{
     background-image: url("img/sp_02.png");
     background-repeat: no-repeat;
@@ -324,9 +384,7 @@ span.br::before{
     text-align: center;
     display: block;
 }
-/*newsPageおわり-------------------------------------*/
-
-/*qaPageはじまり-------------------------------------*/
+/*qa.htmlの部分-------------------------------------*/
 .qaPage_top_text{
     background-image: url("img/sp_03.png");
     background-repeat: no-repeat;
@@ -361,24 +419,19 @@ span.br::before{
 .qaBox i {
     color: #a1909034;
     cursor: pointer;
-    transition: all 0.6s 0s ease;
+    transition: all 0.5s 0s ease;
 }
 .qaBox_closed{
-    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s 0s ease;
 }
 /* JSで表示させる部分 */
 .qaBox_opened {
-    visibility: visible;
+    opacity: 1;
     padding-bottom: 50px;
 }
 /* JSで表示させる部分 */
 .qa_rotatte {
     transform: rotate(-180deg);
 }
-/*qaPageおわり-------------------------------------*/
-
-
-
-
-
 }

@@ -6,33 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LP(レシポンシブデザイン)</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
-    <!-----------------------headerのはじまり----------------------------->
-
-    <!--CSSで、positionじゃなくてflexbox(display:flex)使ってるバージョンで作成-->
+    <!---------------header-------------->
     <header class="header">
         <div class="header_wrap">
             <div class="header_logo">
                 <p>HTML<br>CSS</p>
             </div>
-            <div class="header_nav">
-                <nav class="header_nav_right" aria-label="サイトメニュー">
-                    <ul class="header_nav_list">
-                        <li class="header_nav_list_item"><a href="index.html">About</a></li>
-                        <li class="header_nav_list_item"><a href="news.html">News</a></li>
-                        <li class="header_nav_list_item"><a href="qa.html">Q&A</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <!-- アコーディオン -->
+            <nav class="header_nav" id="headerNav" aria-label="サイトメニュー">
+                <ul class="list">
+                    <li class="list_item" id="list1">
+                        <a class="anchor" id="anchor1" href="index.html">About</a>
+                    </li>
+                    <li class="list_item middle" id="list2">
+                        <a class="anchor" id="anchor2" href="news.html">News</a>
+                    </li>
+                    <li class="list_item" id="list3">
+                        <a class="anchor" id="anchor3" href="qa.html">Q&A</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- ハンバーガーメニュー -->
+        <div class="menuTrigger" id="menuTrigger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </header>
-    <!-----------------------headerのおわり----------------------------->
+
+    <!---------------aboutTop-------------->
     <div class="about_top">
         <h1 class="about_top_text"><span class="about_top_text_item">We </span><span class="br"></span><span
                 class="about_top_text_item">proposes </span><span class="br"></span><span class="about_top_text_item">a
@@ -84,7 +94,7 @@
             <input type="submit" value="Send" class="form_submit_sp">
         </form>
     </section>
-    <!-----------------------footerのはじまり----------------------------->
+    <!-------------------footer------------------>
     <footer class="footer">
         <div class="footer_wrap">
             <div class="footer_logo">
@@ -104,12 +114,8 @@
             <p class="footer_copyright_text">@HTMLCSS.code</p>
         </div>
     </footer>
-    <!-----------------------footerのおわり----------------------------->
-
     <script src="main.js"></script>
 
 </body>
 
 </html>
-<!--  feature/no01ブランチへのコミット -->
-<!--  feature/no01ブランチへの2回目のコミット -->
